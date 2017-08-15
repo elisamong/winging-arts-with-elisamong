@@ -23,7 +23,7 @@ layout: default
           <article class="post entry" itemscope itemtype="http://schema.org/CreativeWork">
 
             <header class="entry-header">
-              <h1 class="entry-title" itemprop="headline"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
+              <h1 class="entry-title" itemprop="headline"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
               <p class="entry-meta">
                 <time class="entry-time" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
               </p>
@@ -44,15 +44,15 @@ layout: default
           <div class="archive-pagination pagination">
             <ul>
               {% if paginator.previous_page %}
-              <li><a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev Page</a></li>
+              <li><a href="{{ site.baseurl }}{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev Page</a></li>
               {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
               <li class="active">{{ page }}</li>
               {% elsif page == 1 %}
-              <li><a href="{{ site.github.url }}/blog/">{{ page }}</a></li>
+              <li><a href="{{ site.baseurl }}{{ site.baseurl }}/blog/">{{ page }}</a></li>
               {% else %}
-              <li><a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+              <li><a href="{{ site.baseurl }}{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
               {% endif %} {% endfor %} {% if paginator.next_page %}
-              <li><a href="{{ paginator.next_page_path | replace: '//', '/' }}">Next Page &raquo;</a></li>
+              <li><a href="{{ site.baseurl }}{{ paginator.next_page_path | replace: '//', '/' }}">Next Page &raquo;</a></li>
               {% endif %}
             </ul>
           </div>

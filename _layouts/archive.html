@@ -23,7 +23,7 @@ layout: default
           <article class="post entry" itemscope itemtype="http://schema.org/CreativeWork">
 
             <header class="entry-header">
-              <h1 class="entry-title" itemprop="headline"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
+              <h1 class="entry-title" itemprop="headline"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h1>
               <p class="entry-meta">
                 <time class="entry-time" itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
               </p>

@@ -1,8 +1,8 @@
 # Site Settings
-title: Jekyll Cart
-description: A Jekyll Based Shopping Cart Built with simpleCart(js)
+title: Winging Arts with Elisa Mong
+description: A blog for crafty and card making related things
 url:
-baseurl: ""
+baseurl: "/winging-arts-with-elisamong"
 
 # Jekyll Configuration
 encoding: UTF-8
