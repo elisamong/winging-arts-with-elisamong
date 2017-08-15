@@ -48,7 +48,7 @@ layout: default
               {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
               <li class="active">{{ page }}</li>
               {% elsif page == 1 %}
-              <li><a href="{{ site.url }}/blog/">{{ page }}</a></li>
+              <li><a href="{{ site.github.url }}/blog/">{{ page }}</a></li>
               {% else %}
               <li><a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
               {% endif %} {% endfor %} {% if paginator.next_page %}

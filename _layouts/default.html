@@ -24,18 +24,18 @@ layout: compress
 
     </div>
 
-    <script src="{{ site.url }}/js/jquery-2.2.4.min.js"></script>
-    <script src="{{ site.url }}/js/simpleCart.js"></script>
-    <script async src="{{ site.url }}/js/main.js"></script>
-    <script async src="{{ site.url }}/js/responsive-menu.js"></script>
+    <script src="{{ site.github.url }}/js/jquery-2.2.4.min.js"></script>
+    <script src="{{ site.github.url }}/js/simpleCart.js"></script>
+    <script async src="{{ site.github.url }}/js/main.js"></script>
+    <script async src="{{ site.github.url }}/js/responsive-menu.js"></script>
 
     {% if page.url contains '/products/' %}
-      <script async src="{{ site.url }}/js/style-picker.js"></script>
-      <script async src="{{ site.url }}/js/add-to-cart.js"></script>
+      <script async src="{{ site.github.url }}/js/style-picker.js"></script>
+      <script async src="{{ site.github.url }}/js/add-to-cart.js"></script>
     {% endif %}
 
     {% if page.url == '/checkout/' %}
-      <script async src="{{ site.url }}/js/checkout.js"></script>
+      <script async src="{{ site.github.url }}/js/checkout.js"></script>
     {% endif %}
 
   </body>

@@ -8,7 +8,7 @@ tags:
 ---
 
 {% capture fig_img %}
-![Foo]({{ site.url }}/images/unsplash-gallery-image-3.jpg)
+![Foo]({{ site.github.url }}/images/unsplash-gallery-image-3.jpg)
 {% endcapture %}
 
 <figure>
