@@ -32,7 +32,7 @@ layout: default
             <div class="entry-content" itemprop="text">
               {% if post.featured_image_path %}<a class="entry-image-link" href="{{ post.url }}" aria-hidden="true"><img width="1024" height="682" src="{{ post.featured_image_path }}" class="post-image entry-image" alt="{{ post.title }}" itemprop="image"></a>{% endif %}
               <p>{{ post.content | strip_html | strip | truncate: 440 }}&#x02026;</p>
-              <p><a class="more-link" href="{{ post.url }}">Continue Reading</a></p>
+              <p><a class="more-link" href="{{ site.baseurl }}{{ post.url }}">Continue Reading</a></p>
             </div>
 
           </article>
